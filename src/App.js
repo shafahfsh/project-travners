@@ -4,9 +4,9 @@ import '../src/App.css'
 import Landing from './pages/Landing'
 import About from './pages/About'
 import Travel from './pages/Travel'
-import Register from './pages/Register'
-import Login from './pages/Login'
 import Home from './pages/Home'
+import Article from './pages/Article'
+import ArticleDetail from './components/ArticleDetail'
 
 
 const App = () => {
@@ -17,11 +17,12 @@ const App = () => {
 
         <Routes>
           <Route path='/' element={<Landing/>}/>
-          <Route path='/register' element={<Register/>}/>
-          <Route path='/login' element={<Login/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/travel' element={<Travel/>}/>
+          <Route path='/article' element={<Article/>}/>
+          <Route path='/articledetail' element={<ArticleDetail/>}/>
+          <Route path="/articles/:id" element={<ArticleDetail/>} />
         </Routes>
       </div>
   );
