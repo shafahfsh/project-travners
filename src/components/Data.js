@@ -100,7 +100,7 @@ const Data = [
     },
     {
         id: "12",
-        title: "Dunia Fantasi",
+        title: "Dunia Fantasi, Jakarta Utara",
         location: "Jakarta, Indonesia",
         price: "Rp.150.000",
         image: "/images/img-duniafantasi.png",
@@ -127,7 +127,7 @@ const Data = [
     },
     {
         id: "15",
-        title: "Museum Macam, Jakarta Barat",
+        title: "Museum Macan, Jakarta Barat",
         location: "Jakarta, Indonesia",
         price: "Rp.150.000",
         image: "/images/img-museummacan.png",
