@@ -8,9 +8,9 @@ const Landing = () => {
     <div className="Landing">
       <header className="Header">
       <div className="logo">
-        <img src="image/img-logo.png"/>
+        <img src="images/img-logo.png"/>
       </div>
-      <button className="explore-button">Explore</button>
+      <a className="explore-button" href='/register'>Explore</a>
     </header>
 
     <section className="hero">

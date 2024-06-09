@@ -1,11 +1,18 @@
 import React from 'react';
 import '../css/About.css';
+import Navbar from '../components/Navbar';
 
 
 const About = () => {
   return (
-    <div className='About' id='aboutus'>
+    <div className='About' >
+        <div className='navbar'>
+                <Navbar/>
+            </div>
+            
+        
         <section className='about-container'>
+            
                  <div className='about-left'>
                     <h2>Tentang <span className="yellow-text">Kami</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget dui bibendum, interdum metus vitae, commodo felis. Nam vel metus commodo, gravida mi in, venenatis libero. Vivamus vel orci massa. Nam mattis interdum lobortis. Cras sem lorem, semper eu mollis et, accumsan mattis nisl. Cras sed nisl massa. Etiam dui diam, lacinia nec magna non, egestas ullamcorper dolor.</p>

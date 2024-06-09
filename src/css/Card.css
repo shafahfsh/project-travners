@@ -2,12 +2,12 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 0px;
-    padding: 1px;
+    row-gap: 50px;
+    padding: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 0 520px 0;
+    margin: 0 0 220px 0;
 }
 
 .card-card {
@@ -48,10 +48,8 @@
     font-size: 12px;
     font-weight: bold;
     margin: 0;
-    margin-left: auto;
     margin-right: auto;
-    justify-content: space-around;
-    gap: 70px;
+    gap: 25px;
     text-align: start;
     display: flex;
 }
@@ -81,3 +79,4 @@
 .card-rating{
     margin: 5px 0 0 0;
 }
+

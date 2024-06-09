@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/Home.css";
 import feather from "feather-icons";
+import Navbar from '../components/Navbar'
+import Card from '../components/Card'
 
 class Home extends React.Component {
   componentDidMount() {
@@ -10,41 +12,20 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar">
-          <div className="logo">
-            <img src="img/LOGOPP.png" alt="Logo" />
-          </div>
-          <ul className="nav-links">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Paket Travel</a>
-            </li>
-            <li>
-              <a href="#">Artikel</a>
-            </li>
-          </ul>
-          <div className="auth-buttons">
-            <button className="nama">
-              Hi, User <i data-feather="user"></i>
-            </button>
-          </div>
-        </nav>
+        <div className='navbar'>
+                <Navbar/>
+            </div>
 
-        <section className="hero">
-          <div className="hero-content">
-            <div className="hero-text">
+        <section className="hero-home">
+          <div className="hero-home-content">
+            <div className="hero-home-text">
               <h1>
                 Selamat Datang di <span>Website Kami</span>
               </h1>
               <p>Kami selalu membuat pelanggan kami nyaman dengan menyediakan sebanyak mungkin pilihan</p>
               <button className="btn-explore">Eksplor</button>
             </div>
-            <div className="hero-images">
+            <div className="hero-home-images">
               <img src="img/img1.png" alt="Image 1" />
               <img src="img/img2.png" alt="Image 2" />
               <img src="img/img3.png" alt="Image 3" id="imggg" />
@@ -52,9 +33,9 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <section className="features">
-          <div className="features-content">
-            <div className="features-text">
+        <section className="features-home">
+          <div className="features-home-content">
+            <div className="features-home-text">
               <h2>Pelayanan</h2>
               <p>Top pelayanan terbaik kami untuk anda</p>
             </div>
@@ -86,39 +67,10 @@ class Home extends React.Component {
           </div>
 
           <div className="slider">
-            <div className="card">
-              <img src="img/seaworld.png" alt="Seaworld Ancol" />
-              <div className="card-info">
-                <h4>Seaworld Ancol, Jakarta Utara</h4>
-                <p>Jakarta, Indonesia</p>
-                <p className="price">RP 250.000</p>
-                <p className="rating">
-                  4.8 <span className="star">&#9733;</span>
-                </p>
-              </div>
-            </div>
-            <div className="card">
-              <img src="img/pasarSeni.png" alt="Pasar Seni Ancol" />
-              <div className="card-info">
-                <h4>Pasar Seni Ancol, Jakarta Utara</h4>
-                <p>Jakarta, Indonesia</p>
-                <p className="price">RP 50.000</p>
-                <p className="rating">
-                  4.8 <span className="star">&#9733;</span>
-                </p>
-              </div>
-            </div>
-            <div className="card">
-              <img src="img/dufan.png" alt="Dufan Ancol" />
-              <div className="card-info">
-                <h4>Dufan Ancol, Jakarta Utara</h4>
-                <p>Jakarta, Indonesia</p>
-                <p className="price">RP 215.000</p>
-                <p className="rating">
-                  4.8 <span className="star">&#9733;</span>
-                </p>
-              </div>
-            </div>
+            <div className="card" id="1"></div>
+            <div className="card" id='2'></div>
+          
+            <div className="card" id="3"></div>
           </div>
         </div>
 
@@ -195,25 +147,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <footer>
-          <div className="footer-container">
-            <div className="footer-contact">
-              <h2>Contact Us</h2>
-              <p>Email: powerpioneers@gmail.com</p>
-              <p>Hotline: 123-456-7890</p>
-            </div>
-            <div className="footer-social-media">
-              <img src="img/LOGOPP.png" alt="" />
-              <h2>Social Media</h2>
-              <a href="#">Facebook</a>
-              <a href="#">Twitter</a>
-              <a href="#">Instagram</a>
-            </div>
-          </div>
-          <div className="footer-copyright">
-            <p>&copy; 2024 Power Pioners. All Rights Reserved.</p>
-          </div>
-        </footer>
+        
       </div>
     );
   }
